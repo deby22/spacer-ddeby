@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="search">
       <h1>
         spacer
       </h1>
@@ -8,6 +8,6 @@
 
 <script>
 export default {
-  name: 'Home',
+  name: 'Search',
 };
 </script>
