@@ -1,16 +1,14 @@
 <template>
     <div class="wrapper">
     <Claim />
-        <div class="search">
-            <label for="search">Search</label>
-            <input @input="handleInput" id="search" name="search" v-model="searchValue" />
-        </div>
+    <SearchInput />
     </div>
 </template>
 
 <script>
 
 import Claim from '@/components/Claim.vue';
+import SearchInput from '@/components/SearchInput.vue';
 
 import axios from 'axios';
 import debounce from 'lodash.debounce';
@@ -26,7 +24,8 @@ export default {
     };
   },
   components: {
-    Claim,
+      Claim,
+      SearchInput,
   },
   methods: {
 
@@ -48,12 +47,18 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
-    padding: 30px;
-    width: 100%;
+    justify-content: center;
+    background-image: url('../assets/heroimage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80% 0%;
 }
 
 .search {

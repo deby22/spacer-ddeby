@@ -1,11 +1,11 @@
 <template>
-    <div class="wrapper">
+    <div class="claimWrapper">
         <h1 class="claim">SPACER</h1>
         <p class="subclaim">
-            Lorem ipsum dolor sit amet.
+            Begin your journey through our galaxy, and discover places you never evend heard of.
         </p>
         <p class="subclaim">
-            Lorem ipsum dolor sit amet.
+            Type anything splace-related to start.
         </p>
     </div>
 </template>
@@ -20,10 +20,20 @@ export default {
 
 
 <style lang="scss" scoped>
-.wrapper {
+.claimWrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.claim {
+    font-size: 50px;
+    margin: 0;
+}
+
+.subclaim {
+    margin-top: 20px 0 0 0;
+    font-size: 13px;
 }
 </style>
